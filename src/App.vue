@@ -28,6 +28,7 @@
         <v-list-item
             v-for="link in links"
             :key="link.title"
+            :to="link.url"
             >
                 <v-list-item-icon>
                     <v-icon>{{ link.icon }}</v-icon>
@@ -46,6 +47,7 @@
             <v-btn
             v-for="link in links"
             :key="link.title"
+            :to="link.url"
             text><v-icon left>{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
             <v-btn text><v-icon left>mdi-cake-variant</v-icon>Link One</v-btn>
             <v-btn text>Link Two</v-btn>
