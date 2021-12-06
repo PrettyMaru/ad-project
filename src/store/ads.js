@@ -17,7 +17,7 @@ export default {
 			},
 			{
 				title:"Third",
-				desc:"Thitd Desc",
+				desc:"Third Desc",
 				promo: true,
 				src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
 				id:"3"
