@@ -17,7 +17,7 @@ export default {
 			},
 			{
 				title:"Third",
-				desc:"Thitd Desc",
+				desc:"Third Desc",
 				promo: true,
 				src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
 				id:"3"
@@ -44,6 +44,11 @@ export default {
 		},
 		myAds(state) {
 			return state.ads
-	}
+	},
+    adById(state) {
+        return id => {
+        return state.ads.find(ad => ad.id == id)
+        }
+    }    
 }
 }

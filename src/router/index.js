@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Ad from '@/components/Ads/Ad'
@@ -17,6 +16,7 @@ export default new Router({
         },
         {
             path:"/ad/:id",
+            props: true,
             name:"ad",
             component: Ad
         },
