@@ -17,17 +17,18 @@ export default {
         }    
     },
 	actions: {
-        registerUser({commit},{email, password}){
+        async registerUser({commit},{email, password}){
             commit('clearError')
             commit('setLoading', true)
-            fb.auth().createUserWithEmailAndPassword(email,password).then(response => {
+            try {
+        const response = await fb.auth().createUserWithEmailAndPassword(email,password)
                 commit('setUser', new User(response.user.uid))
                 commit('setLoading', false)
-            }).catch( error => {
+            } catch (error) {
                 commit('setLoading', false)
                 commit('setError', error.message)
         throw error
-            })
+            }
         }
         
     },
