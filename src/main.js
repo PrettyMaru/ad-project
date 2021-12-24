@@ -16,13 +16,14 @@ new Vue({
     store,
     created(){
         const firebaseConfig = {
-        apiKey: "AIzaSyCnoRGhc0NM0UfzxVifI1-scpwXx7lP6uY",
-        authDomain: "maru-ad-pro.firebaseapp.com",
-        projectId: "maru-ad-pro",
-        storageBucket: "maru-ad-pro.appspot.com",
-        messagingSenderId: "499308363718",
-        appId: "1:499308363718:web:9ea5fb1d76539f6d487cc7",
-        measurementId: "${config.measurementId}"
+            apiKey: "AIzaSyCnoRGhc0NM0UfzxVifI1-scpwXx7lP6uY",
+            authDomain: "maru-ad-pro.firebaseapp.com",
+            databaseURL: "https://maru-ad-pro-default-rtdb.firebaseio.com",
+            projectId: "maru-ad-pro",
+            storageBucket: "maru-ad-pro.appspot.com",
+            messagingSenderId: "499308363718",
+            appId: "1:499308363718:web:9ea5fb1d76539f6d487cc7",
+            measurementId: "G-KGDY2BQXHT"
     };
     // Initialize Firebase
         fb.initializeApp(firebaseConfig);
